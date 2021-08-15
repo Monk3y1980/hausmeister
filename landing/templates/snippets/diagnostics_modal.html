@@ -1,0 +1,54 @@
+<div class="modal fade contact-modal" id="diagnostic" tabindex="-1" role="dialog" aria-label="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-custom">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-header">
+              <h5 class="modal-title">Order Diagnostics</h5>
+            </div>
+            <div class="modal-dialog-inner">
+              <form class="rd-mailform mailform-modal text-left offset-top-30" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="range range-15">
+                  <div class="cell-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="coach-order-name-2">Your name</label>
+                      <input class="form-control" id="coach-order-name-2" type="text" name="name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="cell-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="coach-order-email-2">Your e-mail</label>
+                      <input class="form-control" id="coach-order-email-2" type="email" name="email" data-constraints="@Required @Email">
+                    </div>
+                  </div>
+                  <div class="cell-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="contact-order-phone-2">Your phone</label>
+                      <input class="form-control" id="contact-order-phone-2" type="text" name="phone" data-constraints="@Required @Numeric">
+                    </div>
+                  </div>
+                  <div class="cell-lg-12 offset-top-20 block-relative-validation">
+                    <!-- Select 2-->
+                    <select class="form-input select" data-placeholder="Select an option" data-constraints="@Required">
+                      <option label="placeholder"></option>
+                      <option label="2">Washer Repair</option>
+                      <option value="3">Refrigerator Repair</option>
+                      <option value="4">Microwave Repair</option>
+                      <option value="5">Stove Repair</option>
+                    </select>
+                  </div>
+                  <div class="cell-lg-12 offset-top-20">
+                    <div class="form-group">
+                      <label class="form-label" for="coach-order-message-2">Message</label>
+                      <textarea class="form-control" id="coach-order-message-2" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-sm text-center text-lg-left offset-top-30">
+                  <button class="btn btn btn-primary btn-mod-1" type="submit">Order</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

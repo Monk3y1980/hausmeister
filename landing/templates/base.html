@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="wide wow-animation" lang="de">
+  <head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,600italic,900">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="{% static 'js/html5shiv.min.js' %}"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="page">
+      {% include 'snippets/header.html' %}
+      <!-- Page Content-->
+      <!-- Swiper-->
+      {% include 'snippets/swiper.html' %}
+      <!-- Content -->
+      {% block content %}
+      {% endblock content %}
+      <!-- Google Map-->
+      {#% include 'snippets/map.html' %#}
+      <!-- Page Footer-->
+      {% include 'snippets/footer.html' %}
+      <!-- Free Consultation Modal-->
+      <!-- Modal-->
+      {% include 'snippets/contact_modal.html' %}
+      <!-- Free Diagnostics Modal-->
+      <!-- Modal-->
+      {% include 'snippets/diagnostics_modal.html' %}
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
