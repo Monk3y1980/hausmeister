@@ -25,7 +25,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
+
+    'bootstrap4',
+
+    'app.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +103,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -119,3 +122,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# настройки почты
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'kaban80'
+EMAIL_HOST_PASSWORD = 'K@luga1980'
+EMAIL_USE_SSL = True
+
+ADMINS = [
+    ('Admin', 'eugen.eisner@gmail.com'),
+]
+SERVER_EMAIL = 'kaban80@gmail.com'  # это будет у нас вместо аргумента FROM в массовой рассылке

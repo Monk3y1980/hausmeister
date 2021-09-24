@@ -1,509 +1,545 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <!-- A Few Words About Us-->
-      <section class="section-60 section-sm-90 section-md-110" id="about">
-        <div class="shell">
-          <div class="range range-sm-center">
-            <div class="cell-sm-8 cell-md-6">
-              <div class="inset-md-right-30">
-                <div class="thumbnail thumbnail-video">
-                  <figure><img src="images/about-1-540x310.jpg" alt="" width="540" height="310"/>
+<section class="section-60 section-sm-90 section-md-110" id="about">
+  <div class="shell">
+    <div class="range range-sm-center">
+      <div class="cell-sm-8 cell-md-6">
+        <div class="inset-md-right-30">
+          <div class="thumbnail thumbnail-video">
+            <figure><img src="images/about-1-540x310.jpg" alt="" width="540" height="310" />
+            </figure>
+            <div class="caption"><a class="icon icon-xxl icon-white-contrast icon-circle mdi mdi-play-circle-outline"
+                data-lightbox="iframe" href="https://www.youtube.com/watch?v=_j7-oZ2eQwI"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="cell-sm-8 cell-md-6 offset-top-45 offset-md-top-0">
+        <h2>Ein paar Worte über uns</h2>
+        <div class="divider divider-md divider-primary divider-sm-left"></div>
+        <p class="offset-top-30 offset-md-top-55">Renovate has been in operation in San Diego since 1982. We are a
+          family-owned and family-run business, which means customers receive more care than at a franchise or large
+          corporation.</p>
+        <p>Our goal is high quality service and customer satisfaction. This is achieved through our highly qualified
+          professional team of friendly technicians whose main goal is to satisfy your needs. We are proud of our
+          continuous relationships with over 100,000 (and growing) households.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Counters-->
+<section class="section-80 section-md-110 bg-gray-lighter">
+  <div class="shell">
+    <div class="range">
+      <div class="cell-xs-6 cell-sm-3">
+        <!-- CountTo-->
+        <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-like"></span>
+          <div class="counter-value">
+            <p class="h3"><span class="counter" data-from="0" data-to="100">100%</span><span class="symbol">%</span></p>
+          </div>
+          <div class="divider-center divider-md divider-denim"></div>
+          <div class="counter-text">
+            <p class="text-style-2">Satisfaction Guaranteed</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-xs-top-0">
+        <!-- CountTo-->
+        <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-small58"></span>
+          <div class="counter-value">
+            <p class="h3"><span class="counter" data-from="0" data-to="10">10</span></p>
+          </div>
+          <div class="divider-center divider-md divider-denim"></div>
+          <div class="counter-text">
+            <p class="text-style-2">Years on Market</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-sm-top-0">
+        <!-- CountTo-->
+        <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-user12"></span>
+          <div class="counter-value">
+            <p class="h3"><span class="counter" data-from="0" data-to="2954">2 954</span></p>
+          </div>
+          <div class="divider-center divider-md divider-denim"></div>
+          <div class="counter-text">
+            <p class="text-style-2">Happy Customers</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-sm-top-0">
+        <!-- CountTo-->
+        <div class="counter-wrap"><span class="icon icon-lg-variant-1 icon-primary linecons-tv1"></span>
+          <div class="counter-value">
+            <p class="h3"><span class="counter" data-from="0" data-to="3597">3 597</span></p>
+          </div>
+          <div class="divider-center divider-md divider-denim"></div>
+          <div class="counter-text">
+            <p class="text-style-2">Items of Equipment Repaired</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Services section-->
+<!-- Our Services-->
+<section id="services">
+  <div class="section-60 bg-gradient-denim">
+    <div class="bg-diamond-element"></div>
+    <div class="shell text-center">
+      <div class="range">
+        <div class="cell-xs-12">
+          <h2>Unsere Dienstleistungen</h2>
+          <p class="big">You can rest assured that repairs are only performed with your prior approval of the work</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-top-40 section-bottom-60 section-sm-bottom-110">
+    <div class="shell-wide shell-mod-1">
+      <div class="range">
+        <!-- Slick Carousel-->
+        <div class="slick-slider slick-slider-style-1" data-arrows="true" data-loop="true" data-dots="false"
+          data-swipe="true" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="4" data-xl-items="6"
+          data-slide-to-scroll="1" data-mobile-center-mode="true" data-sm-center-mode="false" data-center-padding="30px"
+          data-sm-center-padding="0.5">
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-1-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Ice Maker Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-2-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Stove Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-3-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Microwave Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-4-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Washer Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-5-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Refrigerator Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item height-fill">
+            <div class="product"><a class="product-image" href="#"><img src="images/home-6-223x227.jpg" alt=""
+                  width="223" height="227" /></a>
+              <div class="product-caption">
+                <div class="divider divider-sm divider-primary"></div>
+                <div class="product-title">
+                  <h5><a href="#">Range Hood Repair</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shell offset-top-30 offset-sm-top-40">
+      <div class="text-center"><a class="btn btn-primary min-width-230" href="#">view all services</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team-->
+<section class="section-80 section-md-110 bg-gray-lighter" id="team">
+  <div class="shell">
+    <div class="range text-center">
+      <div class="cell-xs-12">
+        <h2>Unser Team</h2>
+        <div class="divider divider-md divider-primary"></div>
+      </div>
+    </div>
+    <div class="range range-xs-center">
+      <div class="cell-xs-10 cell-sm-6 cell-md-4">
+        <div class="thumbnail-variant-2">
+          <figure class="thumbnail-image"><img src="images/team-5-370x370.jpg" alt="" width="370" height="370" />
+          </figure>
+          <div class="caption">
+            <h4><a href="#">Thomas Hanson</a></h4>
+            <p class="text-silver-chalice">Electrician</p>
+            <!-- List social-->
+            <ul class="list-inline list-inline-xxs">
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
+        <div class="thumbnail-variant-2">
+          <figure class="thumbnail-image"><img src="images/team-6-370x370.jpg" alt="" width="370" height="370" />
+          </figure>
+          <div class="caption">
+            <h4><a href="#">Adam Fowler</a></h4>
+            <p class="text-silver-chalice">Plumber</p>
+            <!-- List social-->
+            <ul class="list-inline list-inline-xxs">
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-md-top-0">
+        <div class="thumbnail-variant-2">
+          <figure class="thumbnail-image"><img src="images/team-7-370x370.jpg" alt="" width="370" height="370" />
+          </figure>
+          <div class="caption">
+            <h4><a href="#">Phillip Miller</a></h4>
+            <p class="text-silver-chalice">Serviceman</p>
+            <!-- List social-->
+            <ul class="list-inline list-inline-xxs">
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
+              <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Manufacturers-->
+<section class="parallax-container bg-gray-base" data-parallax-img="images/parallax-1.jpg">
+  <div class="parallax-content section-60 section-130">
+    <div class="shell">
+      <div class="range text-center">
+        <div class="cell-xs-12">
+          <h2>Manufacturers</h2>
+          <div class="divider divider-md divider-primary"></div>
+        </div>
+      </div>
+      <div class="range range-condensed offset-top-55">
+        <!-- Owl Carousel-->
+        <div class="owl-carousel owl-carousel-style-1" data-autoplay="true" data-items="1" data-md-items="3"
+          data-lg-items="4" data-xl-items="5" data-stage-padding="0" data-loop="true" data-margin="30"
+          data-sm-margin="73" data-nav="false" data-dots="true" data-sm-dots-each="2">
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-7-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-8-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-9-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-10-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-11-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+          <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-9-184x54.png"
+                alt="" width="184" height="54" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section Pricing-->
+<!-- Four Plans-->
+<section class="section-80 text-center" id="pricing">
+  <div class="shell">
+    <div class="range">
+      <div class="cell-xs-12">
+        <h2>Pricing</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="range range-sm-center range-sm-middle offset-top-30">
+      <div class="cell-sm-6 cell-lg-3">
+        <div class="pricing-table pricing-table-style-lighter">
+          <div class="pricing-table-header">
+            <h6 class="pricing-table-heading">Ultimate</h6>
+            <p class="price">$59.00</p>
+          </div>
+          <div class="pricing-table-body">
+            <ul class="list-bordered">
+              <li><a href="#">Free Consultation</a></li>
+              <li><a href="#">Electrical Repair</a></li>
+              <li><a href="#">Annual Servicing</a></li>
+              <li><a href="#">Plumber Services</a></li>
+            </ul>
+          </div>
+          <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
+        </div>
+      </div>
+      <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-sm-top-0">
+        <div class="pricing-table pricing-table-style-lighter pricing-table-preferred-variant-1">
+          <div class="pricing-table-header">
+            <h6 class="pricing-table-heading">Professional</h6>
+            <p class="price">$33.00</p>
+          </div>
+          <div class="pricing-table-body">
+            <ul class="list-bordered">
+              <li><a href="#">Online Consultation</a></li>
+              <li><a href="#">Range Repair</a></li>
+              <li><a href="#">Replacement Parts</a></li>
+              <li><a href="#">Electrician Services</a></li>
+            </ul>
+          </div>
+          <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
+        </div>
+      </div>
+      <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-lg-top-0">
+        <div class="pricing-table pricing-table-style-lighter">
+          <div class="pricing-table-header">
+            <h6 class="pricing-table-heading">Standard</h6>
+            <p class="price">$19.00</p>
+          </div>
+          <div class="pricing-table-body">
+            <ul class="list-bordered">
+              <li><a href="#">Paid Consultation</a></li>
+              <li><a href="#">Professional Assistance</a></li>
+              <li><a href="#">Free Tutorials</a></li>
+              <li><a href="#">Equipment Lending</a></li>
+            </ul>
+          </div>
+          <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
+        </div>
+      </div>
+      <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-lg-top-0">
+        <div class="pricing-table pricing-table-style-lighter">
+          <div class="pricing-table-header">
+            <h6 class="pricing-table-heading">Basic</h6>
+            <p class="price">$9.00</p>
+          </div>
+          <div class="pricing-table-body">
+            <ul class="list-bordered">
+              <li><a href="#">Phone Consultation</a></li>
+              <li><a href="#">Paid Tutorials</a></li>
+              <li><a href="#">Reference Resources</a></li>
+              <li><a href="#">Serviceman Assistance</a></li>
+            </ul>
+          </div>
+          <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials-->
+<section class="section-60 section-sm-top-110 section-sm-bottom-100 bg-gray-lighter" id="testimonials">
+  <div class="shell">
+    <div class="range text-center">
+      <div class="cell-xs-12">
+        <h2>Referenzen</h2>
+        <div class="divider divider-md divider-primary"></div>
+      </div>
+    </div>
+    <div class="range offset-top-50">
+      <!-- Owl Carousel-->
+      <div class="owl-carousel" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4"
+        data-stage-padding="15" data-autoplay="true" data-loop="true" data-margin="30" data-nav="false" data-dots="true"
+        data-md-dots-each="2">
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="{% static 'images/home-12-47x47.jpg' %}" alt="" width="47"
+                      height="47" />
                   </figure>
-                  <div class="caption"><a class="icon icon-xxl icon-white-contrast icon-circle mdi mdi-play-circle-outline" data-lightbox="iframe" href="https://www.youtube.com/watch?v=_j7-oZ2eQwI"></a></div>
+                </div>
+                <div class="unit-body">
+                  <cite>Jennifer West</cite>
+                  <p class="small">Housewife</p>
                 </div>
               </div>
             </div>
-            <div class="cell-sm-8 cell-md-6 offset-top-45 offset-md-top-0">
-              <h2>A Few Words About Us</h2>
-              <div class="divider divider-md divider-primary divider-sm-left"></div>
-              <p class="offset-top-30 offset-md-top-55">Renovate has been in operation in San Diego since 1982. We are a family-owned and family-run business, which means customers receive more care than at a franchise or large corporation.</p>
-              <p>Our goal is high quality service and customer satisfaction. This is achieved through our highly qualified professional team of friendly technicians whose main goal is to satisfy your needs. We are proud of our continuous relationships with over 100,000 (and growing) households.</p>
+            <div class="quote-body">
+              <p>
+                <q>I highly recommend this company. I had a washer breakdown and they had it back up and running within
+                  30 minutes of the service call. The technicians were very professional and prompt. If you have any
+                  appliance damages, give them a call, they will surely fix them.</q>
+              </p>
             </div>
-          </div>
+          </blockquote>
         </div>
-      </section>
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt="" width="47" height="47" />
+                  </figure>
+                </div>
+                <div class="unit-body">
+                  <cite>Patrick Carlson</cite>
+                  <p class="small">Web Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote-body">
+              <p>
+                <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a
+                  timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="images/home-14-47x47.jpg" alt="" width="47" height="47" />
+                  </figure>
+                </div>
+                <div class="unit-body">
+                  <cite>Christine Bryant</cite>
+                  <p class="small">Journalist</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote-body">
+              <p>
+                <q>
+                  Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't
+                  working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip
+                  worked tirelessly to make calling them a good experience.
 
-      <!-- Counters-->
-      <section class="section-80 section-md-110 bg-gray-lighter">
-        <div class="shell">
-          <div class="range">
-            <div class="cell-xs-6 cell-sm-3">
-              <!-- CountTo-->
-              <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-like"></span>
-                <div class="counter-value">
-                  <p class="h3"><span class="counter" data-from="0" data-to="100">100%</span><span class="symbol">%</span></p>
-                </div>
-                <div class="divider-center divider-md divider-denim"></div>
-                <div class="counter-text">
-                  <p class="text-style-2">Satisfaction Guaranteed</p>
-                </div>
-              </div>
+                </q>
+              </p>
             </div>
-            <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-xs-top-0">
-              <!-- CountTo-->
-              <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-small58"></span>
-                <div class="counter-value">
-                  <p class="h3"><span class="counter" data-from="0" data-to="10">10</span></p>
-                </div>
-                <div class="divider-center divider-md divider-denim"></div>
-                <div class="counter-text">
-                  <p class="text-style-2">Years on Market</p>
-                </div>
-              </div>
-            </div>
-            <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-sm-top-0">
-              <!-- CountTo-->
-              <div class="counter-wrap"><span class="icon icon-lg icon-primary linecons-user12"></span>
-                <div class="counter-value">
-                  <p class="h3"><span class="counter" data-from="0" data-to="2954">2 954</span></p>
-                </div>
-                <div class="divider-center divider-md divider-denim"></div>
-                <div class="counter-text">
-                  <p class="text-style-2">Happy Customers</p>
-                </div>
-              </div>
-            </div>
-            <div class="cell-xs-6 cell-sm-3 offset-top-45 offset-sm-top-0">
-              <!-- CountTo-->
-              <div class="counter-wrap"><span class="icon icon-lg-variant-1 icon-primary linecons-tv1"></span>
-                <div class="counter-value">
-                  <p class="h3"><span class="counter" data-from="0" data-to="3597">3 597</span></p>
-                </div>
-                <div class="divider-center divider-md divider-denim"></div>
-                <div class="counter-text">
-                  <p class="text-style-2">Items of Equipment Repaired</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </blockquote>
         </div>
-      </section>
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47" />
+                  </figure>
+                </div>
+                <div class="unit-body">
+                  <cite>William Wallace</cite>
+                  <p class="small">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote-body">
+              <p>
+                <q>I highly recommend this service center. The best service I have ever received from an appliance
+                  repair company. If needed, I will definitely refer to them again for my repair needs.</q>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt="" width="47" height="47" />
+                  </figure>
+                </div>
+                <div class="unit-body">
+                  <cite>Jennifer West</cite>
+                  <p class="small">Housewife</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote-body">
+              <p>
+                <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a
+                  timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote class="quote-variant-1">
+            <div class="quote-meta">
+              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                <div class="unit-left">
+                  <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47" />
+                  </figure>
+                </div>
+                <div class="unit-body">
+                  <cite>William Wallace</cite>
+                  <p class="small">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote-body">
+              <p>
+                <q>Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't
+                  working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip
+                  worked tirelessly to make calling them a good experience.</q>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!--Services section-->
-      <!-- Our Services-->
-      <section id="services">
-        <div class="section-60 bg-gradient-denim">
-          <div class="bg-diamond-element"></div>
-          <div class="shell text-center">
-            <div class="range">
-              <div class="cell-xs-12">
-                <h2>Our Services</h2>
-                <p class="big">You can rest assured that repairs are only performed with your prior approval of the work</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-top-40 section-bottom-60 section-sm-bottom-110">
-          <div class="shell-wide shell-mod-1">
-            <div class="range">
-              <!-- Slick Carousel-->
-              <div class="slick-slider slick-slider-style-1" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="4" data-xl-items="6" data-slide-to-scroll="1" data-mobile-center-mode="true" data-sm-center-mode="false" data-center-padding="30px" data-sm-center-padding="0.5">
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-1-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Ice Maker Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-2-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Stove Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-3-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Microwave Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-4-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Washer Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-5-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Refrigerator Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item height-fill">
-                  <div class="product"><a class="product-image" href="#"><img src="images/home-6-223x227.jpg" alt="" width="223" height="227"/></a>
-                    <div class="product-caption">
-                      <div class="divider divider-sm divider-primary"></div>
-                      <div class="product-title">
-                        <h5><a href="#">Range Hood Repair</a></h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="shell offset-top-30 offset-sm-top-40">
-            <div class="text-center"><a class="btn btn-primary min-width-230" href="#">view all services</a></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Team-->
-      <section class="section-80 section-md-110 bg-gray-lighter" id="team">
-        <div class="shell">
-          <div class="range text-center">
-            <div class="cell-xs-12">
-              <h2>Our Team</h2>
-              <div class="divider divider-md divider-primary"></div>
-            </div>
-          </div>
-          <div class="range range-xs-center">
-            <div class="cell-xs-10 cell-sm-6 cell-md-4">
-              <div class="thumbnail-variant-2">
-                <figure class="thumbnail-image"><img src="images/team-5-370x370.jpg" alt="" width="370" height="370"/>
-                </figure>
-                <div class="caption">
-                  <h4><a href="#">Thomas Hanson</a></h4>
-                  <p class="text-silver-chalice">Electrician</p>
-                  <!-- List social-->
-                  <ul class="list-inline list-inline-xxs">
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
-              <div class="thumbnail-variant-2">
-                <figure class="thumbnail-image"><img src="images/team-6-370x370.jpg" alt="" width="370" height="370"/>
-                </figure>
-                <div class="caption">
-                  <h4><a href="#">Adam Fowler</a></h4>
-                  <p class="text-silver-chalice">Plumber</p>
-                  <!-- List social-->
-                  <ul class="list-inline list-inline-xxs">
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-md-top-0">
-              <div class="thumbnail-variant-2">
-                <figure class="thumbnail-image"><img src="images/team-7-370x370.jpg" alt="" width="370" height="370"/>
-                </figure>
-                <div class="caption">
-                  <h4><a href="#">Phillip Miller</a></h4>
-                  <p class="text-silver-chalice">Serviceman</p>
-                  <!-- List social-->
-                  <ul class="list-inline list-inline-xxs">
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
-                    <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Manufacturers-->
-      <section class="parallax-container bg-gray-base" data-parallax-img="images/parallax-1.jpg">
-        <div class="parallax-content section-60 section-130">
-          <div class="shell">
-            <div class="range text-center">
-              <div class="cell-xs-12">
-                <h2>Manufacturers</h2>
-                <div class="divider divider-md divider-primary"></div>
-              </div>
-            </div>
-            <div class="range range-condensed offset-top-55">
-              <!-- Owl Carousel-->
-              <div class="owl-carousel owl-carousel-style-1" data-autoplay="true" data-items="1" data-md-items="3" data-lg-items="4" data-xl-items="5" data-stage-padding="0" data-loop="true" data-margin="30" data-sm-margin="73" data-nav="false" data-dots="true" data-sm-dots-each="2">
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-7-184x54.png" alt="" width="184" height="54"/></a></div>
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-8-184x54.png" alt="" width="184" height="54"/></a></div>
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-10-184x54.png" alt="" width="184" height="54"/></a></div>
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-11-184x54.png" alt="" width="184" height="54"/></a></div>
-                <div class="item"><a class="link-image link-image-contrast" href="#"><img src="images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Section Pricing-->
-      <!-- Four Plans-->
-      <section class="section-80 text-center" id="pricing">
-        <div class="shell">
-          <div class="range">
-            <div class="cell-xs-12">
-              <h2>Pricing</h2>
-              <hr>
-            </div>
-          </div>
-          <div class="range range-sm-center range-sm-middle offset-top-30">
-            <div class="cell-sm-6 cell-lg-3">
-              <div class="pricing-table pricing-table-style-lighter">
-                <div class="pricing-table-header">
-                  <h6 class="pricing-table-heading">Ultimate</h6>
-                  <p class="price">$59.00</p>
-                </div>
-                <div class="pricing-table-body">
-                  <ul class="list-bordered">
-                    <li><a href="#">Free Consultation</a></li>
-                    <li><a href="#">Electrical Repair</a></li>
-                    <li><a href="#">Annual Servicing</a></li>
-                    <li><a href="#">Plumber Services</a></li>
-                  </ul>
-                </div>
-                <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
-              </div>
-            </div>
-            <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-sm-top-0">
-              <div class="pricing-table pricing-table-style-lighter pricing-table-preferred-variant-1">
-                <div class="pricing-table-header">
-                  <h6 class="pricing-table-heading">Professional</h6>
-                  <p class="price">$33.00</p>
-                </div>
-                <div class="pricing-table-body">
-                  <ul class="list-bordered">
-                    <li><a href="#">Online Consultation</a></li>
-                    <li><a href="#">Range Repair</a></li>
-                    <li><a href="#">Replacement Parts</a></li>
-                    <li><a href="#">Electrician Services</a></li>
-                  </ul>
-                </div>
-                <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
-              </div>
-            </div>
-            <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-lg-top-0">
-              <div class="pricing-table pricing-table-style-lighter">
-                <div class="pricing-table-header">
-                  <h6 class="pricing-table-heading">Standard</h6>
-                  <p class="price">$19.00</p>
-                </div>
-                <div class="pricing-table-body">
-                  <ul class="list-bordered">
-                    <li><a href="#">Paid Consultation</a></li>
-                    <li><a href="#">Professional Assistance</a></li>
-                    <li><a href="#">Free Tutorials</a></li>
-                    <li><a href="#">Equipment Lending</a></li>
-                  </ul>
-                </div>
-                <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
-              </div>
-            </div>
-            <div class="cell-sm-6 cell-lg-3 offset-top-30 offset-lg-top-0">
-              <div class="pricing-table pricing-table-style-lighter">
-                <div class="pricing-table-header">
-                  <h6 class="pricing-table-heading">Basic</h6>
-                  <p class="price">$9.00</p>
-                </div>
-                <div class="pricing-table-body">
-                  <ul class="list-bordered">
-                    <li><a href="#">Phone Consultation</a></li>
-                    <li><a href="#">Paid Tutorials</a></li>
-                    <li><a href="#">Reference Resources</a></li>
-                    <li><a href="#">Serviceman Assistance</a></li>
-                  </ul>
-                </div>
-                <div class="pricing-table-footer"><a class="btn btn-primary" href="#">sign up</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials-->
-      <section class="section-60 section-sm-top-110 section-sm-bottom-100 bg-gray-lighter" id="testimonials">
-        <div class="shell">
-          <div class="range text-center">
-            <div class="cell-xs-12">
-              <h2>Testimonials</h2>
-              <div class="divider divider-md divider-primary"></div>
-            </div>
-          </div>
-          <div class="range offset-top-50">
-            <!-- Owl Carousel-->
-            <div class="owl-carousel" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4" data-stage-padding="15" data-autoplay="true" data-loop="true" data-margin="30" data-nav="false" data-dots="true" data-md-dots-each="2">
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>Jennifer West</cite>
-                        <p class="small">Housewife</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>I highly recommend this company. I had a washer breakdown and they had it back up and running within 30 minutes of the service call. The technicians were very professional and prompt. If you have any appliance damages, give them a call, they will surely fix them.</q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>Patrick Carlson</cite>
-                        <p class="small">Web Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-14-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>Christine Bryant</cite>
-                        <p class="small">Journalist</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>
-                        Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip worked tirelessly to make calling them a good experience.
-
-                      </q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>William Wallace</cite>
-                        <p class="small">Manager</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>I highly recommend this service center. The best service I have ever received from an appliance repair company. If needed, I will definitely refer to them again for my repair needs.</q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>Jennifer West</cite>
-                        <p class="small">Housewife</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote class="quote-variant-1">
-                  <div class="quote-meta">
-                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                      <div class="unit-left">
-                        <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47"/>
-                        </figure>
-                      </div>
-                      <div class="unit-body">
-                        <cite>William Wallace</cite>
-                        <p class="small">Manager</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="quote-body">
-                    <p>
-                      <q>Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip worked tirelessly to make calling them a good experience.</q>
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Join Our Team-->
-      <section class="section-60 section-sm-top-75" id="join-us">
-        <div class="shell">
-          <div class="range range-sm-center range-sm-middle">
-            <div class="cell-sm-6">
-              <figure><img src="images/careers-1-570x365.jpg" alt="" width="570" height="365"/>
-              </figure>
-            </div>
-            <div class="cell-sm-6 offset-top-45 shift-md-top-10">
-              <h2>Join Our Team</h2>
-              <div class="divider divider-md divider-primary divider-sm-left"></div>
-              <p class="offset-top-30 offset-md-top-55">Take a job opportunity of a lifetime - join the team of Renovate. We are interested in hiring professionals for a long term, so feel free to send us your CV.</p>
-              <div class="offset-top-30"><a class="btn btn-primary" href="#">send resume</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- Join Our Team-->
+<!-- <section class="section-60 section-sm-top-75" id="join-us">
+  <div class="shell">
+    <div class="range range-sm-center range-sm-middle">
+      <div class="cell-sm-6">
+        <figure><img src="images/careers-1-570x365.jpg" alt="" width="570" height="365" />
+        </figure>
+      </div>
+      <div class="cell-sm-6 offset-top-45 shift-md-top-10">
+        <h2>Join Our Team</h2>
+        <div class="divider divider-md divider-primary divider-sm-left"></div>
+        <p class="offset-top-30 offset-md-top-55">Take a job opportunity of a lifetime - join the team of Renovate. We
+          are interested in hiring professionals for a long term, so feel free to send us your CV.</p>
+        <div class="offset-top-30"><a class="btn btn-primary" href="#">send resume</a></div>
+      </div>
+    </div>
+  </div>
+</section> -->
 {% endblock content %}
