@@ -125,11 +125,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # настройки почты
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'kaban80'
-EMAIL_HOST_PASSWORD = 'K@luga1980'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_SSL = True
 
 ADMINS = [
-    ('Admin', 'eugen.eisner@gmail.com'),
+    ('Admin', ''),
 ]
-SERVER_EMAIL = 'kaban80@gmail.com'  # это будет у нас вместо аргумента FROM в массовой рассылке
+SERVER_EMAIL = ''  # это будет у нас вместо аргумента FROM в массовой рассылке

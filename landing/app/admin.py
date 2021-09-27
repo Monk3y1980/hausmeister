@@ -14,17 +14,17 @@ class ContactPriceAdmin(admin.ModelAdmin):
 class SliderAdmin(admin.ModelAdmin):
 
     def image_tag(self, obj):
-        return format_html('<img src="{}" style="width: 1920px; height: 600px;"/>'.format(obj.image.url))
+        return format_html('<img src="{}" style="width: 480px; height: 150px;"/>'.format(obj.image.url))
 
     image_tag.short_description = 'bild'
-    list_display = ['image_tag', 'name', 'title', 'text']
+    list_display = ['image_tag', 'name']
 
 
 @admin.register(TestimonialsCarousel)
 class TestimonialsCarouselAdmin(admin.ModelAdmin):
 
     def image_tag(self, obj):
-        return format_html('<img src="{}" style="width: 47px; height: 47px;"/>'.format(obj.avatar.url))
+        return format_html('<img src="{}" style="width: 47px; height: 47px;"/>'.format(obj.image.url))
 
     image_tag.short_description = 'bild'
     list_display = ['image_tag', 'first_name', 'last_name', 'testimonial']

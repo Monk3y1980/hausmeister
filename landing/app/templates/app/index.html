@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static custom_tags %}
 {% block content %}
 <!-- A Few Words About Us-->
 <section class="section-60 section-sm-90 section-md-110" id="about">
@@ -192,61 +192,27 @@
       </div>
     </div>
     <div class="range range-xs-center">
+      {% get_team as team_items%}
+      {% for item in team_items %}
       <div class="cell-xs-10 cell-sm-6 cell-md-4">
         <div class="thumbnail-variant-2">
-          <figure class="thumbnail-image"><img src="images/team-5-370x370.jpg" alt="" width="370" height="370" />
+          <figure class="thumbnail-image"><img src="{{item.avatar.url}}" alt="" width="370" height="370" />
           </figure>
           <div class="caption">
-            <h4><a href="#">Thomas Hanson</a></h4>
-            <p class="text-silver-chalice">Electrician</p>
+            <h4><a href="#">{{ item.first_name }} {{ item.last_name }}</a></h4>
+            <p class="text-silver-chalice">{{ item.job }}</p>
             <!-- List social-->
-            <ul class="list-inline list-inline-xxs">
+<!--             <ul class="list-inline list-inline-xxs">
               <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
               <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
               <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
               <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
               <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
-      <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
-        <div class="thumbnail-variant-2">
-          <figure class="thumbnail-image"><img src="images/team-6-370x370.jpg" alt="" width="370" height="370" />
-          </figure>
-          <div class="caption">
-            <h4><a href="#">Adam Fowler</a></h4>
-            <p class="text-silver-chalice">Plumber</p>
-            <!-- List social-->
-            <ul class="list-inline list-inline-xxs">
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-md-top-0">
-        <div class="thumbnail-variant-2">
-          <figure class="thumbnail-image"><img src="images/team-7-370x370.jpg" alt="" width="370" height="370" />
-          </figure>
-          <div class="caption">
-            <h4><a href="#">Phillip Miller</a></h4>
-            <p class="text-silver-chalice">Serviceman</p>
-            <!-- List social-->
-            <ul class="list-inline list-inline-xxs">
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-google fa-google" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin" href="#"></a></li>
-              <li><a class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
   </div>
 </section>
 
@@ -380,152 +346,39 @@
       <div class="owl-carousel" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4"
         data-stage-padding="15" data-autoplay="true" data-loop="true" data-margin="30" data-nav="false" data-dots="true"
         data-md-dots-each="2">
+        {% get_testimonials_items as items %}
+        {% for item in items %}
         <div class="item">
           <blockquote class="quote-variant-1">
             <div class="quote-meta">
               <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                 <div class="unit-left">
-                  <figure class="quote-image"><img src="{% static 'images/home-12-47x47.jpg' %}" alt="" width="47"
-                      height="47" />
+                  <figure class="quote-image"><img src="{{ item.image.url }}"
+                      alt="{{ item.last_name }} {{ item.first_name }}" width="47" height="47" />
                   </figure>
                 </div>
                 <div class="unit-body">
-                  <cite>Jennifer West</cite>
-                  <p class="small">Housewife</p>
+                  <cite>{{item.first_name}} {{item.last_name}}</cite>
+                  <!-- <p class="small">Housewife</p> -->
                 </div>
               </div>
             </div>
             <div class="quote-body">
               <p>
-                <q>I highly recommend this company. I had a washer breakdown and they had it back up and running within
-                  30 minutes of the service call. The technicians were very professional and prompt. If you have any
-                  appliance damages, give them a call, they will surely fix them.</q>
+                <q>{{ item.testimonial }}</q>
               </p>
             </div>
           </blockquote>
         </div>
-        <div class="item">
-          <blockquote class="quote-variant-1">
-            <div class="quote-meta">
-              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                <div class="unit-left">
-                  <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt="" width="47" height="47" />
-                  </figure>
-                </div>
-                <div class="unit-body">
-                  <cite>Patrick Carlson</cite>
-                  <p class="small">Web Designer</p>
-                </div>
-              </div>
-            </div>
-            <div class="quote-body">
-              <p>
-                <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a
-                  timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
-              </p>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="quote-variant-1">
-            <div class="quote-meta">
-              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                <div class="unit-left">
-                  <figure class="quote-image"><img src="images/home-14-47x47.jpg" alt="" width="47" height="47" />
-                  </figure>
-                </div>
-                <div class="unit-body">
-                  <cite>Christine Bryant</cite>
-                  <p class="small">Journalist</p>
-                </div>
-              </div>
-            </div>
-            <div class="quote-body">
-              <p>
-                <q>
-                  Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't
-                  working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip
-                  worked tirelessly to make calling them a good experience.
-
-                </q>
-              </p>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="quote-variant-1">
-            <div class="quote-meta">
-              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                <div class="unit-left">
-                  <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47" />
-                  </figure>
-                </div>
-                <div class="unit-body">
-                  <cite>William Wallace</cite>
-                  <p class="small">Manager</p>
-                </div>
-              </div>
-            </div>
-            <div class="quote-body">
-              <p>
-                <q>I highly recommend this service center. The best service I have ever received from an appliance
-                  repair company. If needed, I will definitely refer to them again for my repair needs.</q>
-              </p>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="quote-variant-1">
-            <div class="quote-meta">
-              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                <div class="unit-left">
-                  <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt="" width="47" height="47" />
-                  </figure>
-                </div>
-                <div class="unit-body">
-                  <cite>Jennifer West</cite>
-                  <p class="small">Housewife</p>
-                </div>
-              </div>
-            </div>
-            <div class="quote-body">
-              <p>
-                <q>Great service from this family-owned (and experienced) company! They fixed my washing machine in a
-                  timely and professional manner. I highly recommend them. Thank you for a good work, guys!</q>
-              </p>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="quote-variant-1">
-            <div class="quote-meta">
-              <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                <div class="unit-left">
-                  <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt="" width="47" height="47" />
-                  </figure>
-                </div>
-                <div class="unit-body">
-                  <cite>William Wallace</cite>
-                  <p class="small">Manager</p>
-                </div>
-              </div>
-            </div>
-            <div class="quote-body">
-              <p>
-                <q>Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't
-                  working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip
-                  worked tirelessly to make calling them a good experience.</q>
-              </p>
-            </div>
-          </blockquote>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
-</section>
 
-<!-- Join Our Team-->
-<!-- <section class="section-60 section-sm-top-75" id="join-us">
+
+
+  <!-- Join Our Team-->
+  <!-- <section class="section-60 section-sm-top-75" id="join-us">
   <div class="shell">
     <div class="range range-sm-center range-sm-middle">
       <div class="cell-sm-6">
@@ -542,4 +395,4 @@
     </div>
   </div>
 </section> -->
-{% endblock content %}
+  {% endblock content %}
